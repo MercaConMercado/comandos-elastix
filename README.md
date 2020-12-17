@@ -2,31 +2,31 @@
 Comandos SSH para elastix importantes
 
 
-- actualizacion para corregir errores
-yum -y update
+- actualizacion para corregir errores<br>
+yum -y update<br>
 
-- abrir el cli
-asterisk -rvvvvvv
-asterisk -r
+- abrir el cli<br>
+asterisk -rvvvvvv<br>
+asterisk -r<br>
 
-- mirar log de que pasa 
+- mirar log de que pasa <br>
 
-tail -n 400 /var/log/asterisk/full
+tail -n 400 /var/log/asterisk/full<br>
 
-- mirar extenciones
- asterisk -rx "sip show peers"
+- mirar extenciones<br>
+ asterisk -rx "sip show peers"<br>
 
--mirar ip de configuracion
-asterisk -rx "sip show peers" |grep 2958548
+-mirar ip de configuracion<br>
+asterisk -rx "sip show peers" |grep 2958548<br>
 
-- mirar data de extenciones
-asterisk -rx 'database show' | grep /182
+- mirar data de extenciones<br>
+asterisk -rx 'database show' | grep /182<br>
 
-otros
-cat /var/log/asterisk/messages | grep -i error | less
-iax2 show peers   
-iax2 show channels
-vim /etc/asterisk/sip.conf
-/etc/asterisk/modules.conf
-show sip.conf
-from-internal-custom
+otros<br>
+cat /var/log/asterisk/messages | grep -i error | less<br>
+iax2 show peers<br>   
+iax2 show channels<br>
+vim /etc/asterisk/sip.conf<br>
+/etc/asterisk/modules.conf<br>
+show sip.conf<br>
+from-internal-custom<br>
